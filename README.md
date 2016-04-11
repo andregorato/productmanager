@@ -9,10 +9,10 @@ O grenciador de produtos, tem a finalidade de realizar um CRUD simples de produt
 
 ## Instalação
 
-1.  Clone o repositório: 'url'
-2.  Instale as dependências do projeto: 'npm install'
-3.  Inicie o executável do MongoDB (o mongo deverá está rodando em sua porta default 27017)  
-4.  Inicie o servidor node: 'node server'
+1.  Clone o repositório: `url`
+2.  Instale as dependências do projeto: `npm install`
+3.  Inicie o executável do MongoDB: `(o mongo deverá está rodando em sua porta default 27017)` 
+4.  Inicie o servidor node: `node server`
 
 
 ## Recursos disponibilizados
