@@ -1,0 +1,22 @@
+{
+  "name": "product-manager",
+  "version": "1.0.0",
+  "description": "Gerenciador de Produtos",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node server.js"
+  },
+  "author": "André Gorato",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "chai": "^3.5.0",
+    "express": "~4.13.4",
+    "method-override": "^2.3.5",
+    "mocha": "^2.4.5",
+    "mongoose": "~4.4.11",
+    "morgan": "^1.7.0",
+    "request": "^2.70.0"
+  }
+}

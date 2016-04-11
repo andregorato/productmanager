@@ -1,0 +1,15 @@
+html{
+	overflow-y:scroll; 
+}
+
+body{
+	padding-top: 50px;
+}
+
+#product-list{
+	margin-bottom: 30px;
+}
+
+#product-form{
+	margin-bottom: 50px;
+}
