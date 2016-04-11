@@ -11,8 +11,9 @@ O grenciador de produtos, tem a finalidade de realizar um CRUD simples de produt
 
 1.  Clone o repositório: `git clone https://github.com/andregorato/productmanager.git`
 2.  Instale as dependências do projeto: `npm install`
-3.  Inicie o executável do MongoDB: `(o mongo deverá está rodando em sua porta default 27017)` 
-4.  Inicie o servidor node: `node server`
+3.  Verifique se a pasta default do MongoDB foi criada, senão existir, crie: `pasta default C:\data\db`
+4.  Inicie o executável do MongoDB: `o mongo deverá está rodando em sua porta default 27017` 
+5.  Inicie o servidor node: `node server`
 
 ## Recursos disponibilizados
 
