@@ -18,7 +18,7 @@ O grenciador de produtos, tem a finalidade de realizar um CRUD simples, persisti
 ## Recursos disponibilizados
 
 1.  Acesse a aplicação pelo browser em: http://localhost:3350
-2.  Documentação da api: http://localhost:3350/apidocs
-3.  Testes de integração: `npm test` 
+2.  Acesse a documentação da api em: http://localhost:3350/apidocs
+3.  Execute os testes de integração: `npm test` 
 
 ![Gerenciador de produtos - Home](http://i.imgur.com/n7vJzbQ.png)
