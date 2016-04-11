@@ -35,7 +35,7 @@
 		Product.find(function(err, product) {			
 			if (err) return console.error(err);			
 
-			if (product == undefined || product == "" || product == null)
+			if (product === undefined || product === "" || product === null)
 				return res.sendStatus(404);	
 
 			//success			
@@ -65,13 +65,13 @@
 	router.get('/api/product/:id', function(req, res) {
 		
 		if(!req.params.id)
-			return res.sendStatus(400)
+			return res.sendStatus(400);
 
 		//find in mongodb
 		Product.findById(req.params.id, function(err, product){
 			if (err) return console.error(err);
 
-			if (product == undefined || product == "" || product == null)
+			if (product === undefined || product === "" || product === null)
 				return res.sendStatus(404);	
 
 			//success
@@ -122,7 +122,7 @@
     */
 	router.post('/api/product', function(req, res) {
 		if(!req.body.nome || !req.body.descricao || !req.body.preco)
-			return res.sendStatus(400)
+			return res.sendStatus(400);
 
 		//creating in mongodb
 		Product.create(
@@ -134,7 +134,7 @@
 			if (err) return console.error(err);
 
 			Product.find(function(err, product) {
-				if (err) return console.error(err)
+				if (err) return console.error(err);
 
 				//success
 				res.statusCode = 201;
@@ -186,7 +186,7 @@
     */
 	router.put('/api/product/:id', function(req, res) {
 			if(!req.params.id || !req.body.nome || !req.body.descricao || !req.body.preco)
-				return res.sendStatus(400)
+				return res.sendStatus(400);
 
 		Product.findById(req.params.id, function(err, productOutdated){
 			if (err) return console.error(err);
@@ -196,23 +196,23 @@
 				return res.sendStatus(404);				
 
 			//update information of product
-			productOutdated.nome = req.body.nome,
-			productOutdated.descricao = req.body.descricao,
-			productOutdated.preco = req.body.preco
+			productOutdated.nome = req.body.nome;
+			productOutdated.descricao = req.body.descricao;
+			productOutdated.preco = req.body.preco;
 
 		    //persisting changes
 		    productOutdated.save(function(err) {
 		    	if (err) return console.error(err);		    	
 		    	
 		    	Product.find(function(err, product) {
-		    		if (err) return console.error(err)
+		    		if (err) return console.error(err);
 
 		    		//success
 		    		return res.json(product);
 	    		});		    	
 		    				    
 			});			
-		})
+		});
 	});
 
 	/**
@@ -227,13 +227,13 @@
     */
 	router.delete('/api/product/:id', function(req, res) {
 			if(!req.params.id)
-				return res.sendStatus(400)
+				return res.sendStatus(400);
 
 		Product.remove({_id : req.params.id}, function(err, product) {
-			if (err) return console.error(err)
+			if (err) return console.error(err);
 			
 			Product.find(function(err, product) {
-				if (err) return console.error(err)
+				if (err) return console.error(err);
 
 				//success		
 				return res.sendStatus(204);//not content

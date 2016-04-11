@@ -27,7 +27,7 @@ describe("Verificações de ambiente", function(){
 		      });
 		    });
 		  });	
-})
+});
 
  describe("Verificações de produtos da API (SUCESSO)", function() {  
  		var uri = "http://localhost:3350/api/product/";

@@ -20,7 +20,7 @@
 				Products.get()
 				.success(function(data){					
 					$scope.product = data;				
-				})
+				});
 				
 			};
 
