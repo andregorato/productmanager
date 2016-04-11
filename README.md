@@ -3,7 +3,7 @@
 O grenciador de produtos, tem a finalidade de realizar um CRUD simples de produtos, persistindo-os em uma base de dados NO SQL, que no caso é o MongoDB.
 
 ## Requisitos
-
+- [Git] (https://git-scm.com/)
 - [Node] (https://nodejs.org/)
 - [MongoDB] (https://www.mongodb.org/)
 
